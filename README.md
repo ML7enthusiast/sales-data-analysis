@@ -21,8 +21,7 @@ matplotlib
 seaborn
 You can install the required packages using the following command:
 
-bash
-Copy code
+
 pip install pandas matplotlib seaborn
 Installation
 Clone this repository to your local machine:
@@ -51,7 +50,6 @@ Dataset
 The dataset is manually created for demonstration purposes. It contains sales data for three products (Product A, Product B, and Product C) over three different dates. The columns in the dataset are:
 
 Product: The name of the product sold.
-Date: The date of the sale (YYYY-MM-DD format).
 Quantity: The number of units sold.
 Price: The price per unit of the product.
 Analysis
