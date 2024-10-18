@@ -1,32 +1,78 @@
-# Customer Sales Data Analysis
+Sales Data Analysis for Three Products
+This project demonstrates a simple sales data analysis for three products using Python. The analysis involves calculating total sales for each product and for each date, followed by visualizing the data using bar and line charts.
 
-## Overview
-This project analyzes customer sales data using SQLite for data storage and Python for analysis and visualization. The goal is to gain insights into sales trends, customer purchasing behavior, and product performance.
+Table of Contents
+Project Description
+Requirements
+Installation
+Usage
+Dataset
+Analysis
+Results
+License
+Project Description
+This project provides a simple way to perform sales data analysis for three products. The dataset contains information about the sales quantity, price, and date for each product. We calculate the total sales for each product and for each day, then visualize these insights using bar and line plots.
 
-## Files
-- `sales_data.sql`: SQL script to create and populate the `sales` table in a SQLite database.
-- `analysis.py`: Python script for data extraction, analysis, and visualization.
-- `data/sales_data.db`: SQLite database file containing sample sales data.
+Requirements
+To run this project, you need the following Python packages:
 
-## Setup
-1. **Create the Database:**
-   - Run the `sales_data.sql` script to create and populate the SQLite database.
-   
-2. **Run the Analysis Script:**
-   - Ensure Python and required libraries are installed:
-     ```bash
-     pip install pandas matplotlib seaborn sqlite3
-     ```
-   - Execute the `analysis.py` script:
-     ```bash
-     python analysis.py
-     ```
+pandas
+matplotlib
+seaborn
+You can install the required packages using the following command:
 
-## Visualization
-The script generates bar and line charts showing total sales per customer and per date, respectively.
+bash
+Copy code
+pip install pandas matplotlib seaborn
+Installation
+Clone this repository to your local machine:
 
+bash
+Copy code
+git clone https://github.com/your-username/sales-data-analysis.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd sales-data-analysis
+Ensure you have Python 3 installed on your machine.
+
+Install the required packages as mentioned in the Requirements section.
+
+Usage
+To run the analysis, simply execute the Python script:
+
+bash
+Copy code
+python sales_analysis.py
+This will generate the analysis and visualize the results in a set of plots.
+
+Dataset
+The dataset is manually created for demonstration purposes. It contains sales data for three products (Product A, Product B, and Product C) over three different dates. The columns in the dataset are:
+
+Product: The name of the product sold.
+Date: The date of the sale (YYYY-MM-DD format).
+Quantity: The number of units sold.
+Price: The price per unit of the product.
+Analysis
+The analysis includes the following steps:
+
+Load the sales data into a Pandas DataFrame.
+Calculate total sales for each product and for each date:
+Total sales per product = Quantity * Price.
+Group the data by product and date to compute the sums.
+Visualize the results:
+A bar chart showing total sales per product.
+A line chart showing total sales per date.
+Results
+After running the script, the following insights are generated:
+
+Total Sales Per Product: A bar chart that illustrates the cumulative sales for each product.
+Total Sales Per Date: A line chart that shows how total sales fluctuate over time.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 ## Resources
 - [Pandas Documentation](https://pandas.pydata.org/docs/)
 - [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
 - [Seaborn Documentation](https://seaborn.pydata.org/)
-- [SQLite Documentation](https://www.sqlite.org/docs.html)
+
