@@ -19,7 +19,7 @@ def visualize_sales(customer_sales_path, date_sales_path):
     plt.show()
 
     # Plot sales trends over time
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(20, 6))
     sns.lineplot(x='Date', y='TotalSales', data=date_sales)
     plt.title('Sales Trends Over Time')
     plt.xlabel('Date')
