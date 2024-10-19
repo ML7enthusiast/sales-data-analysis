@@ -14,7 +14,7 @@ def analyze_sales_data(df):
 
 if __name__ == "__main__":
     # Assuming you have already extracted the data using `data_extraction.py`
-    df = pd.read_csv('sales_data.csv')  # Replace with actual data source
+    df = pd.read_csv('/content/sales_data.csv') 
     
     # Perform analysis
     customer_sales, date_sales = analyze_sales_data(df)
