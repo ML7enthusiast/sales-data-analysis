@@ -3,7 +3,7 @@ import pandas as pd
 
 def extract_data(database_path):
     # Connect to the SQLite database
-    conn = sqlite3.connect(database_path)
+    conn = sqlite3.connect('/content/sales_data (3).db')
     
     # Query to extract relevant data
     query = """
@@ -20,6 +20,6 @@ def extract_data(database_path):
     return df
 
 if __name__ == "__main__":
-    database_path = "sales_data.db"  # Replace with your actual database path
+    database_path = "/content/sales_data (3).db"  
     data = extract_data(database_path)
     print(data.head())  # Preview data
